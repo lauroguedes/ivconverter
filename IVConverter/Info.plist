@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSFileSharingEnabled</key>
+	<true/>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MOV Video</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>NSIsRelatedItemType</key>
+			<true/>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.quicktime-movie</string>
+				<string>public.movie</string>
+			</array>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>mov</string>
+			</array>
+		</dict>
+	</array>
+	<!-- File Access Permissions -->
+	<key>NSAppleEventsUsageDescription</key>
+	<string>This app needs access to handle files for conversion.</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>We need access to your Desktop to save converted videos.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>We need access to your Documents folder to save converted videos.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>We need access to your Downloads folder to save converted videos.</string>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>We need access to save your converted videos.</string>
+	<key>NSFileProviderPresenceUsageDescription</key>
+	<string>Access is needed to check if files exist at the target location.</string>
+	<key>NSRemovableVolumesUsageDescription</key>
+	<string>We need access to external drives to save converted videos.</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>CFBundleTypeRole</key>
+	<string>Viewer</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Created by IVConverter</string>
+</dict>
+</plist>
