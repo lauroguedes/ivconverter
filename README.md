@@ -26,10 +26,9 @@ A macOS desktop application for converting MOV videos to MP4 format using native
 
 1. Launch IVConverter
 2. Drag and drop a MOV file onto the application window
-3. Click "Choose Output Location" to select where to save the converted MP4 file
-4. Click "Convert" to start the conversion process
-5. The application will show a progress bar during conversion
-6. Once complete, a success message will appear
+3. The application will automatically start the conversion process
+4. The application will show a progress bar during conversion
+5. Once complete, a success message will appear with the location of the converted file
 
 ## How It Works
 
@@ -45,8 +44,3 @@ These settings provide efficient and high-quality video conversion directly with
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- [FFmpeg](https://ffmpeg.org/) - The powerful multimedia framework used for video conversion
-- [SwiftUI](https://developer.apple.com/xcode/swiftui/) - Apple's UI framework for building the application interface
