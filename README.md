@@ -1,11 +1,11 @@
 # IVConverter
 
-A macOS desktop application for converting MOV videos to MP4 format using FFmpeg.
+A macOS desktop application for converting MOV videos to MP4 format using native AVFoundation framework.
 
 ## Features
 
 - Simple drag-and-drop interface for MOV files
-- Uses FFmpeg for high-quality video conversion
+- Uses Apple's AVFoundation for high-quality video conversion
 - Real-time progress tracking
 - Native macOS UI with SwiftUI
 
@@ -13,19 +13,8 @@ A macOS desktop application for converting MOV videos to MP4 format using FFmpeg
 
 - macOS 14.0 or later
 - Xcode 15.0 or later (for development)
-- FFmpeg installed on your system
 
 ## Installation
-
-### Installing FFmpeg
-
-Before using IVConverter, you need to have FFmpeg installed on your system. The easiest way to install FFmpeg is using Homebrew:
-
-```bash
-brew install ffmpeg
-```
-
-Alternatively, you can download the FFmpeg binaries from [FFmpeg's official website](https://ffmpeg.org/download.html).
 
 ### Building from Source
 
@@ -44,15 +33,14 @@ Alternatively, you can download the FFmpeg binaries from [FFmpeg's official webs
 
 ## How It Works
 
-IVConverter uses FFmpeg with the following conversion settings:
+IVConverter uses AVFoundation with the following conversion approach:
 
-- Video codec: H.264
-- Constant Rate Factor (CRF): 23 (balanced quality/size)
-- Preset: medium (balanced speed/compression)
-- Audio codec: AAC
-- Audio bitrate: 128k
+- Uses native Apple frameworks for video transcoding
+- Maintains original video quality while converting to MP4 format
+- Leverages hardware acceleration for faster conversions
+- Preserves metadata and video attributes where possible
 
-These settings provide a good balance between quality and file size for most video conversion needs.
+These settings provide efficient and high-quality video conversion directly within macOS.
 
 ## License
 
